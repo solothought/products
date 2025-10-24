@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WishIn का पूरा गाइड - Wishes बनाना, Wins रिकॉर्ड करना, और अपना Why खोजना सीखें">
+    <title>मदद और गाइड - WishIn | SoloThought</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    
+    <style>
+        .help-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 0 3rem;
+            margin-bottom: 0;
+        }
+        
+        .nav-pills .nav-link {
+            border-radius: 50px;
+            padding: 0.75rem 1.5rem;
+            margin: 0.25rem;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-pills .nav-link:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .nav-pills .nav-link.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .content-section {
+            padding: 3rem 0;
+        }
+        
+        .content-section h2 {
+            color: #667eea;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .content-section h3 {
+            color: #764ba2;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+        
+        .content-section h4 {
+            color: #495057;
+            margin-top: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        blockquote {
+            border-left: 4px solid #667eea;
+            padding-left: 1.5rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: #6c757d;
+        }
+        
+        .example-card {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 0.5rem;
+        }
+        
+        .icon-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #667eea;
+            color: white;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            margin: 0.25rem;
+        }
+        
+        table {
+            margin: 1.5rem 0;
+        }
+        
+        .sticky-nav {
+            position: sticky;
+            top: 20px;
+            background: white;
+            z-index: 100;
+            padding: 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-radius: 25px;
+            margin-bottom: 2rem;
+        }
+        
+        .sticky-nav .nav-pills {
+            margin: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .sticky-nav {
+                position: relative;
+                top: 0;
+            }
+            
+            .sticky-nav .d-flex {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .sticky-nav .ms-3 {
+                margin-left: 0 !important;
+                margin-top: 0.5rem;
+            }
+            
+            .nav-pills {
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+            
+            .nav-pills .nav-link {
+                white-space: nowrap;
+            }
+        }
+        
+        .tip-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem 1.5rem;
+            margin: 1rem 0;
+            border-radius: 0.5rem;
+        }
+        
+        .tip-box strong {
+            color: #856404;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-mount"></div>
+    
+    <!-- Product Hero -->
+    <section class="product-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-check-circle-fill fs-1 me-3"></i>
+                        <h1 class="mb-0">WishIn</h1>
+                    </div>
+                    <p class="lead">Document your journey to overcome fears, build skills, and achieve your wishes—one small step at a time.</p>
+                    <div class="d-flex flex-wrap gap-2 mt-4">
+                        <span class="badge bg-light text-dark px-3 py-2">Android App</span>
+                        <span class="badge bg-light text-dark px-3 py-2">Free Forever</span>
+                        <span class="badge bg-light text-dark px-3 py-2">No Ads</span>
+                        <span class="badge bg-light text-dark px-3 py-2">Private & Offline</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Navigation -->
+    
+    <nav class="product-nav">
+        <div class="container">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/wishin/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/wishin/help.html">Help & Guide</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/wishin/terms.html">Terms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/wishin/privacy-policy.html">Privacy</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main>
+        <div class="container my-5">
+            
+            <!-- Sticky Navigation Tabs -->
+            <div class="sticky-nav">
+                <div class="d-flex justify-content-between align-items-center">
+                    <ul class="nav nav-pills" id="helpTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="wishes-tab" data-bs-toggle="pill" data-bs-target="#wishes" type="button" role="tab">
+                                <i class="bi bi-star me-2"></i>Wishes
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="movements-tab" data-bs-toggle="pill" data-bs-target="#movements" type="button" role="tab">
+                                <i class="bi bi-arrow-right-circle me-2"></i>Movements
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="wins-tab" data-bs-toggle="pill" data-bs-target="#wins" type="button" role="tab">
+                                <i class="bi bi-trophy me-2"></i>Wins
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="why-tab" data-bs-toggle="pill" data-bs-target="#why" type="button" role="tab">
+                                <i class="bi bi-heart me-2"></i>Why
+                            </button>
+                        </li>
+                    </ul>
+                    
+                    <div class="d-flex align-items-center ms-3">
+                        <i class="bi bi-translate text-muted me-2"></i>
+                        <select class="form-select form-select-sm" style="width: auto; min-width: 120px;" onchange="window.location.href=this.value">
+                            <option value="help.html">English</option>
+                            <option value="help-hi.html" selected>हिंदी</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tab Content -->
+            <div class="tab-content" id="helpTabContent">
+                
+                <!-- WISHES TAB -->
+                <div class="tab-pane fade show active" id="wishes" role="tabpanel">
+                    <div class="content-section">
+                        <h1 class="mb-4">Wish - खुशी की शुरुआत</h1>
+                        
+                        <h2>Wish क्या है?</h2>
+                        <p class="lead">एक <strong>Wish</strong> आपका personal mission है — कुछ ऐसा जो आपको <em>जिंदा महसूस</em> कराए, <em>उत्सुक</em> बनाए, या <em>हिम्मत</em> दे। यह खुद को ठीक करने के बारे में नहीं है। यह इस बारे में है कि आप <strong>वो इंसान कैसे बनें जो आप बनना चाहते हैं।</strong></p>
+                        
+                        <blockquote>
+                            "Your wish is not what you want to escape — it's what you want to <em>create</em>."
+                        </blockquote>
+                        
+                        <p>Goals से अलग, wishes भावनात्मक होती हैं, खुली होती हैं, और लचीली होती हैं। वे आपके साथ बढ़ती हैं।</p>
+                        
+                        <h2>एक अच्छी Wish कैसे बनाएं</h2>
+                        <p>एक Wish के तीन हिस्से होते हैं:</p>
+                        <div class="row g-3 my-4">
+                            <div class="col-md-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-pencil-square text-primary fs-1 mb-3"></i>
+                                        <h5>Title</h5>
+                                        <p class="text-muted small mb-0">आप क्या चाहते हैं, सकारात्मक भाषा में</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-chat-heart text-danger fs-1 mb-3"></i>
+                                        <h5>Reason</h5>
+                                        <p class="text-muted small mb-0">यह आपके लिए क्यों मायने रखता है</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-image text-success fs-1 mb-3"></i>
+                                        <h5>Image</h5>
+                                        <p class="text-muted small mb-0">कुछ ऐसा जो सही भावना जगाए</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3>1. Title — इसे Energy के साथ लिखें</h3>
+                        <p>आपकी wish का title आपको आगे <em>खींचे</em>, न कि आपकी कमियों की याद दिलाए। <em>"करूंगा"</em>, <em>"बनूंगा"</em>, <em>"हिम्मत करूंगा"</em>, <em>"बनाऊंगा"</em>, <em>"महसूस करूंगा"</em> जैसे शब्दों का इस्तेमाल करें — जो गति लाएं।</p>
+                        
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>❌ कमजोर / समस्या-आधारित</th>
+                                        <th>✅ मजबूत / सकारात्मक</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>तैरने के डर पर काबू पाना</td>
+                                        <td>Dare to Swim</td>
+                                    </tr>
+                                    <tr>
+                                        <td>शर्मीलापन छोड़ना</td>
+                                        <td>Speak with Ease</td>
+                                    </tr>
+                                    <tr>
+                                        <td>English सीखना</td>
+                                        <td>Enjoy Talking in English</td>
+                                    </tr>
+                                    <tr>
+                                        <td>वजन कम करना</td>
+                                        <td>Feel Light and Active</td>
+                                    </tr>
+                                    <tr>
+                                        <td>टालमटोल बंद करना</td>
+                                        <td>Finish What I Start</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ज्यादा confident बनना</td>
+                                        <td>Own My Presence</td>
+                                    </tr>
+                                    <tr>
+                                        <td>गुस्से पर काबू</td>
+                                        <td>Stay Calm Under Fire</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="tip-box">
+                            <strong>🧭 टिप:</strong> Title पढ़कर ही आपको इसे फिर से खोलने का मन करना चाहिए। लेकिन अगर यह मुश्किल लगे, तो जो भी दिल में आए वही लिख दें।
+                        </div>
+                        
+                        <h3>2. Reason: अपनी Wish के पीछे की छोटी कहानी</h3>
+                        <p>एक <strong>reason</strong> हमेशा गंभीर या समझदारी भरा होना जरूरी नहीं। इसे दिलचस्प बनाएं, perfect नहीं। <em>Atomic Habits</em> के अनुसार, motivation तब सबसे अच्छा काम करता है जब वह <strong>भावनात्मक रूप से charged हो</strong>, न कि नैतिक या आदर्शवादी।</p>
+                        
+                        <blockquote>
+                            People don't change because of perfect logic. They change because of attractive emotion.
+                        </blockquote>
+                        
+                        <h4>💫 गहरा महसूस करने वालों के लिए</h4>
+                        <p>अगर आप अक्सर सोचते हैं कि "मैं जो हूं वो क्यों हूं," तो यह आपकी जगह है।</p>
+                        
+                        <div class="example-card">
+                            <strong>उदाहरण:</strong>
+                            <ul class="mt-2 mb-0">
+                                <li>"मैं अपने गुस्से पर काबू पाना चाहता हूं क्योंकि मैंने इसे एक बार प्यार बर्बाद करते देखा है — और मैं फिर कभी वो इंसान नहीं बनना चाहता।"</li>
+                                <li>"मैं एक किताब लिखना चाहता हूं क्योंकि यह मेरा वो सब कहने का तरीका है जो मैंने कभी किसी से कहने की हिम्मत नहीं की।"</li>
+                                <li>"मैं Japanese सीखना चाहता हूं क्योंकि यह मुझे शांति, विनम्रता और हर छोटी चीज में सुंदरता की याद दिलाती है।"</li>
+                            </ul>
+                        </div>
+                        
+                        <h4>😄 हल्के दिल वालों के लिए</h4>
+                        <p>हर reason से रोना नहीं आना चाहिए — कुछ आपको हंसा सकते हैं, शर्मा सकते हैं या मुस्कुरा सकते हैं।</p>
+                        
+                        <div class="example-card">
+                            <strong>उदाहरण:</strong>
+                            <ul class="mt-2 mb-0">
+                                <li>"मैं तैरना सीखना चाहता हूं क्योंकि मैं beach पर 'बैग की रखवाली' करते-करते थक गया हूं।"</li>
+                                <li>"मैं junk food छोड़ना चाहता हूं क्योंकि मेरी jeans अब मेरे decisions से सहमत नहीं है।"</li>
+                                <li>"मैं अपनी presence दिखाना चाहता हूं क्योंकि मेरे दोस्त group chat में भूल जाते हैं कि मैं भी हूं।"</li>
+                            </ul>
+                        </div>
+                        
+                        <h4>🔒 आपका Private Zone</h4>
+                        <p>यह app आपके सबसे <strong>personal विचारों के लिए एक safe space</strong> है। आपका data आपके device पर रहता है — share नहीं होता, analyze नहीं होता।</p>
+                        
+                        <div class="alert alert-info">
+                            <i class="bi bi-shield-lock me-2"></i>
+                            <strong>Privacy First:</strong> आप यहां वो बातें लिख सकते हैं जो आपने कभी किसी को नहीं बताईं। असली बनें। सच्चे बनें। खुद के साथ ईमानदार रहें।
+                        </div>
+                        
+                        <h4>सरल, सीधा, और प्रभावी</h4>
+                        <p>आपको अपना reason express करने के लिए writer बनने की जरूरत नहीं। इसे सरल, सच्चा और दिल के करीब रखें। कभी-कभी आपके पास कई reasons होंगे — हमेशा वो reason सबसे ऊपर रखें जो आपको सबसे ज्यादा <em>हिला दे</em>।</p>
+                        
+                        <h3>3. 🌄 Image — आपका भावनात्मक Anchor</h3>
+                        
+                        <blockquote>
+                            A book can't be judged by its cover — but the cover can tempt you to open it once.
+                        </blockquote>
+                        
+                        <h4>💫 Image क्यों मायने रखती है</h4>
+                        <p>जब आप किसी wish के साथ image जोड़ते हैं, तो आप उसे सजा नहीं रहे — आप उसे एक <em>भावना</em> से <strong>जोड़</strong> रहे हैं। आपका दिमाग goals याद नहीं रखता। वह भावनाएं याद रखता है।</p>
+                        
+                        <h4>सही Image कैसे चुनें</h4>
+                        <p>वो image चुनें जो आपको किसी <strong>personal कहानी</strong> से जोड़े — एक घटना, बातचीत, या turning point।</p>
+                        
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Wish</th>
+                                        <th>संभावित Image</th>
+                                        <th>यह क्यों काम करती है</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Dare to Swim</td>
+                                        <td>बेटी के साथ pool में पहला दिन</td>
+                                        <td>हिम्मत और खुशी जगाती है</td>
+                                    </tr>
+                                    <tr>
+                                        <td>किताब लिखना</td>
+                                        <td>पसंदीदा movie का भावनात्मक scene</td>
+                                        <td>सपने के पल से जोड़ती है</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Feel Light and Active</td>
+                                        <td>पुरानी photo जहां आप सबसे खुश दिखे</td>
+                                        <td>उस energy की याद दिलाती है जो आप चाहते हैं</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="tip-box">
+                            <strong>🧠 मनोविज्ञान:</strong> आपका दिमाग भावनाओं को sensory patterns के रूप में store करता है। जब आप उस pattern से जुड़ी image देखते हैं, तो वही भावना फिर से जागती है — action लेने की energy के साथ।
+                        </div>
+                        
+                        <blockquote>
+                            "If it gives you goosebumps, a smile, or a small ache in your heart — it's perfect."
+                        </blockquote>
+                    </div>
+                </div>
+                
+                <!-- MOVEMENTS TAB -->
+                <div class="tab-pane fade" id="movements" role="tabpanel">
+                    <div class="content-section">
+                        <h1 class="mb-4">Movements — वे कदम जो सपनों को हकीकत में बदलते हैं</h1>
+                        
+                        <p class="lead">एक <strong>movement</strong> वो <em>पल है जब आप आगे बढ़े</em> — भावनात्मक रूप से, मानसिक रूप से, या व्यावहारिक रूप से — अपनी wish की ओर। यह to-do list नहीं है। यह उस सबूत की diary है कि <em>आप वो इंसान बन रहे हैं जो उस wish के लायक है।</em></p>
+                        
+                        <div class="alert alert-primary">
+                            <i class="bi bi-lightbulb me-2"></i>
+                            <strong>मुख्य अंतर:</strong> Movements वो actions नहीं हैं जो आपको <em>करने चाहिए</em> बल्कि वो यादें हैं जो आप <em>बनाते हैं</em>। Actions भविष्य में रहते हैं दबाव के साथ। यादें अतीत में रहती हैं सबूत, भावना और गति के साथ।
+                        </div>
+                        
+                        <h2>✍️ Movement कैसे लिखें</h2>
+                        <p>Movement add करते समय, तीन छोटे सवालों के जवाब दें:</p>
+                        
+                        <div class="row g-3 my-4">
+                            <div class="col-md-4">
+                                <div class="card border-primary h-100">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">1. क्या हुआ?</h5>
+                                        <p class="text-muted small mb-0">एक छोटी सी घटना या action का वर्णन करें — चाहे वो कितनी भी छोटी हो।</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card border-danger h-100">
+                                    <div class="card-body">
+                                        <h5 class="text-danger">2. कैसा लगा?</h5>
+                                        <p class="text-muted small mb-0">भावना, झिझक, हिम्मत या एहसास को पकड़ें।</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card border-success h-100">
+                                    <div class="card-body">
+                                        <h5 class="text-success">3. क्या बदला?</h5>
+                                        <p class="text-muted small mb-0">नोट करें कि इस पल ने आपके confidence या skill में क्या जोड़ा।</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tip-box">
+                            <strong>🧭 टिप:</strong> Negative अनुभवों को record करने से बचें जब तक वे प्रेरणा न बनें।
+                        </div>
+                        
+                        <h2>उदाहरण: Wish — "Dare to Swim"</h2>
+                        
+                        <div class="example-card">
+                            <h5 class="text-primary">Movement 1</h5>
+                            <p><strong>क्या हुआ:</strong> मैं pool के पास 10 मिनट खड़ा रहा और दूसरों को तैरते देखता रहा।</p>
+                            <p><strong>कैसा लगा:</strong> दिल तेजी से धड़क रहा था, लेकिन इस बार मैं भागा नहीं।</p>
+                            <p class="mb-0"><strong>क्या बदला:</strong> डर उत्सुकता में बदल गया। मैं सीखना चाहता था, छिपना नहीं।</p>
+                        </div>
+                        
+                        <div class="example-card">
+                            <h5 class="text-primary">Movement 2</h5>
+                            <p><strong>क्या हुआ:</strong> मैंने सालों में पहली बार अपने पैर पानी में डुबोए।</p>
+                            <p><strong>कैसा लगा:</strong> डर और गर्व का मिश्रण — लेकिन वहां रहना अच्छा लगा।</p>
+                            <p class="mb-0"><strong>क्या बदला:</strong> मेरा शरीर पानी की feeling को स्वीकार करने लगा।</p>
+                        </div>
+                        
+                        <div class="example-card">
+                            <h5 class="text-primary">Movement 3</h5>
+                            <p><strong>क्या हुआ:</strong> मेरे दोस्त ने मेरा हाथ पकड़ा जब मैं 5 सेकंड के लिए तैरा।</p>
+                            <p><strong>कैसा लगा:</strong> पहले डरावना, फिर आजादी का एहसास।</p>
+                            <p class="mb-0"><strong>क्या बदला:</strong> मुझे एहसास हुआ कि मेरा शरीर तैरना <em>चाहता</em> है; मुझे बस उस पर भरोसा करना है।</p>
+                        </div>
+                        
+                        <div class="example-card">
+                            <h5 class="text-primary">Movement 4</h5>
+                            <p><strong>क्या हुआ:</strong> आज मैंने बिना support के आधा pool तैर लिया।</p>
+                            <p><strong>कैसा लगा:</strong> जैसे मैं अपने नए version में enter कर गया हूं।</p>
+                            <p class="mb-0"><strong>क्या बदला:</strong> अब मैं खुद को उस इंसान के रूप में देखता हूं जो तैर <em>सकता</em> है — न कि डरने वाले के रूप में।</p>
+                        </div>
+                        
+                        <h2>💡 और उदाहरण</h2>
+                        
+                        <h3>Wish: "Speak with Ease"</h3>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Movement</th>
+                                        <th>उद्देश्य</th>
+                                        <th>संभावित Win</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>किसी अजनबी से मुस्कुराकर "Hi" कहना</td>
+                                        <td>Social झिझक कम करना</td>
+                                        <td>"आज guard से hi कहा — अच्छा लगा।"</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10-sec की self-talk video record करना</td>
+                                        <td>अपनी आवाज से घबराहट कम करना</td>
+                                        <td>"इस बार कम cringe हुआ — improvement!"</td>
+                                    </tr>
+                                    <tr>
+                                        <td>एक group chat join करना</td>
+                                        <td>Low-stakes speaking practice</td>
+                                        <td>"एक बार अपनी बात रखी — किसी ने judge नहीं किया।"</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <h3>Date और Image जोड़ना</h3>
+                        <p><strong>Date:</strong> उस दिन (या period) को mark करें जब यह हुआ। यह exact होना जरूरी नहीं — असली progress अक्सर समय के साथ सामने आता है।</p>
+                        <p><strong>Movement Image:</strong> एक ऐसी picture जोड़ें जो भावनात्मक रूप से उस याद से जुड़ी हो — आपकी पहली कोशिश, कोई certificate, trophy, या बस एक simple photo जो उस पल में आपने जो महसूस किया उसे कैद करे।</p>
+                        
+                        <blockquote>
+                            Each image you attach becomes a bookmark in your journey — proof that effort leaves a trace, and that you are already becoming the person you wished to be.
+                        </blockquote>
+                    </div>
+                </div>
+                
+                <!-- WINS TAB -->
+                <div class="tab-pane fade" id="wins" role="tabpanel">
+                    <div class="content-section">
+                        <h1 class="mb-4">Wins — Progress को याद रखने की कला</h1>
+                        
+                        <p class="lead">हर wish उम्मीद से शुरू होती है — लेकिन <em>बढ़ती</em> है सबूत से। हर बार जब आप एक कदम उठाते हैं, चाहे कितना भी छोटा हो, आप <strong>सबूत इकट्ठा</strong> कर रहे हैं कि आप वो इंसान बन रहे हैं जो आप बनना चाहते थे।</p>
+                        
+                        <blockquote>
+                            "Every small win is a vote for your future self." — <em>Atomic Habits</em>
+                        </blockquote>
+                        
+                        <h2>🎯 Win क्या है?</h2>
+                        <p>एक <strong>Win</strong> कोई भी पल है जो आपको "हां, मैंने कुछ ऐसा किया जो मायने रखता है" का एहसास दे।</p>
+                        
+                        <p>यह हो सकता है:</p>
+                        <ul>
+                            <li>कुछ जो आपने <em>पूरा किया</em></li>
+                            <li>कुछ जो आपने <em>पहली बार try किया</em></li>
+                            <li>कुछ जो आपने <em>अपने बारे में समझा</em></li>
+                            <li>या फिर एक <em>पल जिसे आपने पहले से बेहतर handle किया</em></li>
+                        </ul>
+                        
+                        <h2>💡 Wins के उदाहरण</h2>
+                        
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Wish</th>
+                                        <th>Win उदाहरण</th>
+                                        <th>यह असली Win क्यों है</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Dare to Swim</td>
+                                        <td>"आज मैंने पानी में पैर डुबोए।"</td>
+                                        <td>आपने edge का सामना किया — यही हिम्मत है।</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Speak with Ease</td>
+                                        <td>"मैं group chat में शामिल हुआ और अपनी बात रखी।"</td>
+                                        <td>आपने खुद को express किया — confidence की ओर progress।</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Feel Light and Active</td>
+                                        <td>"Lift की जगह सीढ़ियां चढ़ीं।"</td>
+                                        <td>आपने उस इंसान की तरह act किया जो आप बन रहे हैं।</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Finish My Book</td>
+                                        <td>"बस 150 शब्द लिखे, लेकिन आज skip नहीं किया।"</td>
+                                        <td>Momentum perfection से बेहतर है।</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="tip-box">
+                            <strong>🧭 टिप:</strong> Wins को <em>size</em> से judge मत करें। उन्हें <em>direction</em> से judge करें।
+                        </div>
+                        
+                        <h2>Wishes से परे Wins</h2>
+                        <p>Win हमेशा किसी wish से जुड़ी नहीं होती। कभी-कभी, जिंदगी चुपचाप आपकी पिछली कोशिशों को unexpected तरीकों से reward करती है।</p>
+                        
+                        <div class="example-card">
+                            <strong>रोजमर्रा के Wins के उदाहरण:</strong>
+                            <ul class="mt-2 mb-0">
+                                <li>किसी colleague से उनके last day पर तारीफ मिलना</li>
+                                <li>जिस role के लिए apply किया था उसमें select होना</li>
+                                <li>एक अच्छा mentor या coach मिलना</li>
+                                <li>सच्चा दोस्त बनाना</li>
+                                <li>जब जरूरत हो तब parents का support मिलना</li>
+                                <li>झिझक को पार करना और पहला कदम उठाना</li>
+                                <li>Pure luck जब चीजें अपने आप ठीक हो जाएं</li>
+                                <li>Financial pressure के बिना जीना</li>
+                            </ul>
+                        </div>
+                        
+                        <h2>🌸 Wabi-Sabi की सीख</h2>
+                        <p>हर दिन चमकदार नहीं होगा। कुछ दिन बस कोशिश होंगे। और यह ठीक है।</p>
+                        
+                        <blockquote>
+                            Wabi Sabi teaches: <em>Even the cracks are part of the beauty.</em>
+                        </blockquote>
+                        
+                        <p>एक "Win" हो सकता है:</p>
+                        <ul>
+                            <li>"आज छोड़ा नहीं।"</li>
+                            <li>"तब भी दिखा जब मन नहीं था।"</li>
+                            <li>"बिना guilt के rest लिया।"</li>
+                        </ul>
+                        
+                        <h2>💫 Wins record करना क्यों काम करता है</h2>
+                        
+                        <h3>1. Reward Prediction</h3>
+                        <p>जब आपका दिमाग "recorded win" देखता है, तो वह dopamine release करता है — result के लिए नहीं, बल्कि <em>कोशिश की पहचान</em> के लिए। वह छोटी खुशी आपका नया motivation loop बन जाती है।</p>
+                        
+                        <h3>2. Identity Shift</h3>
+                        <p>हर win इस बात का micro-proof है कि आप क्या बन रहे हैं। समय के साथ, ये notes चुपचाप आपकी self-image को "मैं कोशिश कर रहा हूं" से "मैं वो इंसान हूं जो यह करता है" में बदल देते हैं।</p>
+                        
+                        <h3>3. Resilience Memory</h3>
+                        <p>जब आप stuck महसूस करें, अपनी पुरानी wins scroll करना आपको याद दिलाता है कि आप यहां पहले भी आ चुके हैं — और हर बार आप <em>आगे बढ़े हैं</em>।</p>
+                        
+                        <blockquote>
+                            "You'll start believing in yourself not because someone said so, but because your own story says so."
+                        </blockquote>
+                        
+                        <h2>आपके Why से Connection</h2>
+                        <p>आपकी "Wins" वे पल हैं जब आपका <strong>Why</strong> असली दुनिया में shape लेता है। वे आपको दिखाती हैं कि कौन सी wishes वाकई मायने रखती हैं — जो मुश्किल दिनों में भी आपको आगे खींचती रहती हैं।</p>
+                        
+                        <blockquote>
+                            "Wishes show you the dream. Wins prove you're walking toward it."
+                        </blockquote>
+                        
+                        <div class="alert alert-success mt-4">
+                            <i class="bi bi-star me-2"></i>
+                            <strong>याद रखें:</strong> अपनी progress celebrate करें — दुनिया को दिखाने के लिए नहीं, बल्कि अपनी inner story को विश्वास दिलाने के लिए। <em>Wins</em> के अंदर आप जो भी लाइन लिखते हैं वह एक शांत फुसफुसाहट है जो कहती है: <strong>"मैं बढ़ रहा हूं।"</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- WHY TAB -->
+                <div class="tab-pane fade" id="why" role="tabpanel">
+                    <div class="content-section">
+                        <h1 class="mb-4">"Why" की शक्ति</h1>
+                        
+                        <h2>"Why" क्या है?</h2>
+                        <p class="lead">आपका <strong>Why</strong> आपकी wishes के पीछे का <em>भावनात्मक compass</em> है — वह inner कहानी जो explain करती है कि कुछ आपके लिए सच में क्यों मायने रखता है। यह success, status या achievement के बारे में नहीं है। यह इस बारे में है कि आपके actions को क्या <strong>मतलब</strong> देता है और आपकी जिंदगी को क्या <strong>direction</strong> देता है।</p>
+                        
+                        <div class="row g-3 my-4">
+                            <div class="col-md-6">
+                                <div class="card border-danger">
+                                    <div class="card-body">
+                                        <h5 class="text-danger">❌ WHY यह नहीं है:</h5>
+                                        <ul class="mb-0">
+                                            <li>कौन सा career चुनना है</li>
+                                            <li>कौन सा project बनाना है</li>
+                                            <li>Specific goals या achievements</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-success">
+                                    <div class="card-body">
+                                        <h5 class="text-success">✅ WHY यह है:</h5>
+                                        <ul class="mb-0">
+                                            <li>वह consistent pattern जिससे आप impact बनाते हैं</li>
+                                            <li>आप naturally दूसरों के लिए क्या लाते हैं</li>
+                                            <li>दुनिया में आपका core contribution</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <p class="text-muted"><em>"Find Your Why" किताब से प्रेरित</em></p>
+                        
+                        <h2>आपका "Why" क्यों जरूरी है</h2>
+                        <p><strong>संतुष्ट</strong> महसूस करना अक्सर एक पल के लिए <strong>खुश</strong> महसूस करने से ज्यादा powerful होता है। आप खुश हो सकते हैं जब आप trophy पकड़ें या अखबार में अपना नाम देखें। लेकिन अगर वह trophy judges को रिश्वत देकर मिली हो — क्या आप तब भी संतुष्ट होंगे?</p>
+                        
+                        <div class="alert alert-info">
+                            <i class="bi bi-compass me-2"></i>
+                            <strong>आपका Why आपकी मदद करता है:</strong>
+                            <ul class="mb-0 mt-2">
+                                <li>संतुष्ट, grounded महसूस करने में और अपनी direction के बारे में sure रहने में</li>
+                                <li>सही रास्ता चुनने में — career, आदतें, priorities</li>
+                                <li>Decisions पर कम समय overthinking में बिताने में</li>
+                                <li>जब motivation कम हो तब steady रहने में</li>
+                                <li>दर्जनों ideas में से वो चुनने में जो सच में resonate करे</li>
+                            </ul>
+                        </div>
+                        
+                        <h2>🪞 अपना Why कैसे खोजें</h2>
+                        
+                        <blockquote>
+                            "Your WHY already exists — it's not invented, it's discovered." — <em>Find Your Why</em>
+                        </blockquote>
+                        
+                        <p>आप अपना WHY अपनी जिंदगी की असली कहानियों और patterns को देखकर खोजते हैं — खासकर वे जहां आपने <strong>गर्व</strong>, <strong>ऊर्जा</strong>, या <strong>जुड़ाव</strong> महसूस किया।</p>
+                        
+                        <h3>"To … So That …" Framework</h3>
+                        
+                        <div class="row g-4 my-4">
+                            <div class="col-md-6">
+                                <div class="card h-100 bg-light border-0">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">To…</h5>
+                                        <p class="mb-2"><strong>आपका contribution</strong> — आप दूसरों के लिए क्या लाते हैं।</p>
+                                        <p class="text-muted small mb-0">खुद से पूछें:
+                                            <br>• मैं naturally दूसरों के लिए क्या करता हूं?
+                                            <br>• मैं लोगों की मदद, support या guide कैसे करता हूं?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 bg-light border-0">
+                                    <div class="card-body">
+                                        <h5 class="text-success">So that…</h5>
+                                        <p class="mb-2"><strong>आपका impact</strong> — आपकी वजह से क्या बदलता है।</p>
+                                        <p class="text-muted small mb-0">खुद से पूछें:
+                                            <br>• मैं जो करता हूं वह क्यों मायने रखता है?
+                                            <br>• इससे दूसरों की जिंदगी कैसे बेहतर होती है?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3>दूसरों पर Focus क्यों?</h3>
+                        <p>पहले यह अजीब लग सकता है — "मुझे दूसरों के बारे में क्यों सोचना चाहिए? मेरी जिंदगी मेरी है।" लेकिन जब आप गहराई से देखेंगे, तो एहसास होगा: आप जो भी करते हैं वह दूसरों से जुड़ता है।</p>
+                        
+                        <div class="example-card">
+                            <strong>उदाहरण:</strong>
+                            <ul class="mt-2 mb-0">
+                                <li>आप पैसे कमाते हैं दूसरों की मदद करने, gift देने या support करने के लिए</li>
+                                <li>आप अच्छा शरीर चाहते हैं किसी को impress या inspire करने के लिए</li>
+                                <li>आप products बनाते हैं दूसरों की problems solve करने के लिए</li>
+                                <li>आपके सपने तभी meaningful बनते हैं जब दूसरे उनका हिस्सा हों</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="alert alert-warning">
+                            <i class="bi bi-lightbulb me-2"></i>
+                            <strong>Example कहानी:</strong> सोचिए आप एक agricultural tool बनाते हैं जो crops की रक्षा करता है। आप इसके इर्द-गिर्द एक global company बनाने का सपना देखते हैं। लेकिन अगर वह tool <em>किसानों की मदद</em> नहीं करता, तो क्या आप succeed कर पाएंगे? आपका सपना तभी meaningful बनता है जब दूसरे उसका हिस्सा हों।
+                        </div>
+                        
+                        <h4>Why Statements के उदाहरण</h4>
+                        <div class="example-card">
+                            <ul class="mb-0">
+                                <li><strong>To</strong> दूसरों को यह विश्वास दिलाना कि वे सोचते हैं उससे ज्यादा मजबूत हैं <strong>so that</strong> वे जिंदगी का सामना confidence के साथ कर सकें।</li>
+                                <li><strong>To</strong> बच्चों में playful learning के जरिए जिज्ञासा जगाना <strong>so that</strong> वे नई चीजें खोजने को लेकर excited रहें।</li>
+                                <li><strong>To</strong> सुलभ learning spaces बनाना <strong>so that</strong> हर बच्चे को बढ़ने का fair मौका मिले।</li>
+                                <li><strong>To</strong> दर्द को art में बदलना <strong>so that</strong> दूसरों को इसके जरिए healing मिले।</li>
+                                <li><strong>To</strong> शांति और समझ लाना <strong>so that</strong> मेरे आसपास के लोग safe और valued महसूस करें।</li>
+                            </ul>
+                        </div>
+                        
+                        <h2>अपना खोजें कैसे</h2>
+                        <p>वाक्य को तब तक refine करते रहें जब तक वह आपको <em>सच्चा और inspiring</em> न लगे।</p>
+                        
+                        <h3>1. भावनात्मक पलों को याद करें</h3>
+                        <p>2-3 ऐसे अनुभवों के बारे में सोचें जिन्होंने आपको <em>जिंदा महसूस</em> कराया, <em>आभारी</em> बनाया, या <em>बदल</em> दिया। ये वे पल हो सकते हैं जब आपने:</p>
+                        <ul>
+                            <li>किसी की मदद की और गर्व महसूस किया</li>
+                            <li>डर या दर्द को पार किया</li>
+                            <li>कुछ ऐसा बनाया जिसने आपको मुस्कुरा दिया</li>
+                            <li>जिसमें विश्वास करते थे उसके लिए खड़े हुए</li>
+                        </ul>
+                        
+                        <h3>2. पूछें: "इस पल ने मुझे क्या सिखाया?"</h3>
+                        <p>हर मजबूत याद में एक hidden value होती है — शायद हिम्मत, प्यार, creativity, या ईमानदारी। आपका Why आमतौर पर उस core value की ओर इशारा करता है।</p>
+                        
+                        <div class="example-card">
+                            <strong>उदाहरण:</strong>
+                            <p class="mb-1"><strong>पल:</strong> "जब मैंने अपने छोटे cousin को cycle चलाना सिखाया, तो मुझे बहुत अच्छा लगा।"</p>
+                            <p class="mb-1"><strong>Insight:</strong> "मुझे दूसरों को confident feel कराना पसंद है।"</p>
+                            <p class="mb-0"><strong>→ Why:</strong> "दूसरों को अपनी ताकत में विश्वास दिलाना।"</p>
+                        </div>
+                        
+                        <h3>3. अपना Why एक सरल, भावनात्मक वाक्य में लिखें</h3>
+                        <p>इसे <strong>personal बनाएं, perfect नहीं</strong>। ऐसे शब्दों का इस्तेमाल करें जो भावनात्मक रूप से आपके साथ <em>click</em> करें।</p>
+                        
+                        <div class="example-card">
+                            <strong>उदाहरण:</strong>
+                            <ul class="mt-2 mb-0">
+                                <li>"उत्सुकता से जीना और दूसरों को कोशिश करने के लिए बहादुर बनाना।"</li>
+                                <li>"दर्द को art में बदलना और दूसरों में healing inspire करना।"</li>
+                                <li>"सामान्य पलों में भी लोगों को मुस्कुराना।"</li>
+                                <li>"सीखते रहना और जो सीखा उसे share करना।"</li>
+                                <li>"ऐसी चीजें बनाना जो मुझसे ज्यादा जिएं।"</li>
+                            </ul>
+                        </div>
+                        
+                        <h2>Wish vs Why: आपका Why आपकी Wishes को कैसे Filter करता है</h2>
+                        
+                        <p>हमारे पास <strong>कई wishes</strong> हो सकती हैं, लेकिन आमतौर पर <strong>सिर्फ एक core Why</strong>।</p>
+                        
+                        <div class="row g-3 my-4">
+                            <div class="col-md-6">
+                                <div class="card border-warning h-100">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-star text-warning fs-1 mb-2"></i>
+                                        <h5>एक Wish</h5>
+                                        <p class="text-muted mb-0">क्षणिक खुशी लाती है</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-success h-100">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-heart text-success fs-1 mb-2"></i>
+                                        <h5>आपका Why</h5>
+                                        <p class="text-muted mb-0">स्थायी संतुष्टि लाता है</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <p>हर wish आपकी ऊर्जा के लायक नहीं होती। आपका Why एक <em>compass</em> की तरह काम करता है — अगर कोई wish इसके साथ align नहीं होती, तो वह बस एक distraction है।</p>
+                        
+                        <h3>क्या आपकी Wish Align है?</h3>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Wish</th>
+                                        <th>यह क्यों fit करती या नहीं करती</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>"Luxury car खरीदना"</td>
+                                        <td>❌ "सरलता से जीना और शांति inspire करना" के साथ fit नहीं होता।</td>
+                                    </tr>
+                                    <tr>
+                                        <td>"प्रकृति को paint करना सीखना"</td>
+                                        <td>✅ "सुंदरता और शांति express करना" के साथ fit होता है।</td>
+                                    </tr>
+                                    <tr>
+                                        <td>"YouTuber बनना"</td>
+                                        <td>✅ अगर आपका Why है "अपनी आवाज share करना और लोगों से जुड़ना।"</td>
+                                    </tr>
+                                    <tr>
+                                        <td>"हर बहस जीतना"</td>
+                                        <td>❌ "सद्भाव और समझ लाना" के साथ fit नहीं होता।</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="alert alert-primary">
+                            <i class="bi bi-question-circle me-2"></i>
+                            <strong>Wish save करने से पहले खुद से पूछें:</strong> "क्या यह wish दिखाती है कि मैं सच में क्या बन रहा हूं — या बस वही जो दुनिया ने मुझे चाहने को कहा?"
+                        </div>
+                        
+                        <h2>और उदाहरण</h2>
+                        <p>अगर आपको teaching में passion महसूस होता है, तो आपका Why इस तरह हो सकता है:</p>
+                        <div class="example-card">
+                            <ul class="mb-0">
+                                <li><strong>To</strong> बच्चों में playful learning के जरिए जिज्ञासा जगाना <strong>so that</strong> वे नई चीजें explore करने को लेकर excited रहें।</li>
+                                <li><strong>To</strong> सुलभ learning spaces बनाना <strong>so that</strong> हर बच्चे को सीखने का मौका मिले, और मैं उनके साथ सीखते हुए improve होता रहूं।</li>
+                                <li><strong>To</strong> लोगों को उनकी inner strengths पहचानने में मदद करना <strong>so that</strong> वे confident महसूस करें और अपना रास्ता चुनने के लिए empowered बनें।</li>
+                            </ul>
+                        </div>
+                        
+                        <h2>🌙 अंतिम विचार</h2>
+                        <blockquote>
+                            "Your Why is not what you do — it's what makes you <em>come alive</em> while doing it. When your wishes serve your Why, every step feels like growth, not effort."
+                        </blockquote>
+                        
+                        <div class="text-center mt-5 p-4 bg-light rounded">
+                            <i class="bi bi-heart-fill text-danger fs-1 mb-3"></i>
+                            <h3>अपनी यात्रा शुरू करें</h3>
+                            <p class="text-muted">अब जब आप Wishes, Movements, Wins और Why को समझ गए हैं — आप अपनी growth story लिखना शुरू करने के लिए तैयार हैं।</p>
+                            <a href="/wishin/index.html" class="btn btn-primary btn-lg mt-3">
+                                <i class="bi bi-arrow-left me-2"></i>WishIn पर वापस जाएं
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <div id="footer-mount"></div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="/assets/js/components.js"></script>
+    <script src="/assets/js/main.js"></script>
+    
+    <script>
+        // Smooth scroll to top when switching tabs
+        document.querySelectorAll('#helpTabs button').forEach(button => {
+            button.addEventListener('shown.bs.tab', function (event) {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Update active tab on page load if there's a hash
+        window.addEventListener('DOMContentLoaded', function() {
+            const hash = window.location.hash;
+            if (hash) {
+                const tabButton = document.querySelector(`button[data-bs-target="${hash}"]`);
+                if (tabButton) {
+                    const tab = new bootstrap.Tab(tabButton);
+                    tab.show();
+                }
+            }
+        });
+    </script>
+</body>
+</html>

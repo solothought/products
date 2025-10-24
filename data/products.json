@@ -1,0 +1,27 @@
+{
+  "products": [
+    {
+      "name": "My Awesome App",
+      "slug": "my-awesome-app",
+      "description": "A revolutionary app that changes everything",
+      "opensource": false,
+      "hasTerms": true,
+      "hasPrivacyPolicy": true,
+      "hasLicense": true,
+      "version": "1.0.0",
+      "releaseDate": "2024-01-15"
+    },
+    {
+      "name": "Open Source Tool",
+      "slug": "open-source-tool",
+      "description": "An amazing open source utility",
+      "opensource": true,
+      "hasTerms": false,
+      "hasPrivacyPolicy": false,
+      "hasLicense": true,
+      "licenseType": "MIT",
+      "version": "2.3.1",
+      "releaseDate": "2023-11-20"
+    }
+  ]
+}

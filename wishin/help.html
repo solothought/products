@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete guide to using WishIn - Learn how to create wishes, record wins, and discover your why">
+    <title>Help & Guide - WishIn | SoloThought</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    
+    <style>
+        .help-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 0 3rem;
+            margin-bottom: 0;
+        }
+        
+        .nav-pills .nav-link {
+            border-radius: 50px;
+            padding: 0.75rem 1.5rem;
+            margin: 0.25rem;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-pills .nav-link:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .nav-pills .nav-link.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .content-section {
+            padding: 3rem 0;
+        }
+        
+        .content-section h2 {
+            color: #667eea;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .content-section h3 {
+            color: #764ba2;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+        
+        .content-section h4 {
+            color: #495057;
+            margin-top: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        blockquote {
+            border-left: 4px solid #667eea;
+            padding-left: 1.5rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: #6c757d;
+        }
+        
+        .example-card {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 0.5rem;
+        }
+        
+        .icon-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #667eea;
+            color: white;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            margin: 0.25rem;
+        }
+        
+        table {
+            margin: 1.5rem 0;
+        }
+        
+        .sticky-nav {
+            position: sticky;
+            top: 20px;
+            background: white;
+            z-index: 100;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-radius: 50px;
+            margin-bottom: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .sticky-nav {
+                position: relative;
+                top: 0;
+            }
+            
+            .nav-pills {
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+            
+            .nav-pills .nav-link {
+                white-space: nowrap;
+            }
+        }
+        
+        .lang-selector {
+            /* background: rgba(255,255,255,0.2); */
+            background: black;
+            border-radius: 50px;
+            padding: 0.5rem 1rem;
+            display: inline-block;
+        }
+        
+        .tip-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem 1.5rem;
+            margin: 1rem 0;
+            border-radius: 0.5rem;
+        }
+        
+        .tip-box strong {
+            color: #856404;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-mount"></div>
+    
+    <!-- Product Hero -->
+    <section class="product-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-check-circle-fill fs-1 me-3"></i>
+                        <h1 class="mb-0">WishIn</h1>
+                    </div>
+                    <p class="lead">Document your journey to overcome fears, build skills, and achieve your wishes—one small step at a time.</p>
+                    <div class="d-flex flex-wrap gap-2 mt-4">
+                        <span class="badge bg-light text-dark px-3 py-2">Android App</span>
+                        <span class="badge bg-light text-dark px-3 py-2">Free Forever</span>
+                        <span class="badge bg-light text-dark px-3 py-2">No Ads</span>
+                        <span class="badge bg-light text-dark px-3 py-2">Private & Offline</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Navigation -->
+    
+    <nav class="product-nav">
+        <div class="container">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/wishin/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/wishin/help.html">Help & Guide</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/wishin/terms.html">Terms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/wishin/privacy-policy.html">Privacy</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main>
+        <div class="container my-5">
+          <!-- Sticky Navigation Tabs -->
+          <div class="sticky-nav">
+            <div class="d-flex justify-content-between align-items-center">
+              <ul class="nav nav-pills justify-content-center" id="helpTabs" role="tablist">
+                  <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="wishes-tab" data-bs-toggle="pill" data-bs-target="#wishes" type="button" role="tab">
+                          <i class="bi bi-star me-2"></i>Wishes
+                      </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="movements-tab" data-bs-toggle="pill" data-bs-target="#movements" type="button" role="tab">
+                          <i class="bi bi-arrow-right-circle me-2"></i>Movements
+                      </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="wins-tab" data-bs-toggle="pill" data-bs-target="#wins" type="button" role="tab">
+                          <i class="bi bi-trophy me-2"></i>Wins
+                      </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="why-tab" data-bs-toggle="pill" data-bs-target="#why" type="button" role="tab">
+                          <i class="bi bi-heart me-2"></i>Why
+                      </button>
+                  </li>
+              </ul>
+              <!-- <div class="d-flex align-items-center ms-3">
+                <i class="bi bi-translate text-muted me-2"></i>
+                <select class="form-select form-select-sm" style="width: auto; min-width: 120px;">
+                    <option value="en" selected>English</option>
+                    <option value="hi">हिंदी</option>
+                </select>
+            </div> -->
+
+            <div class="d-flex align-items-center ms-3">
+                <i class="bi bi-translate text-muted me-2"></i>
+                <select class="form-select form-select-sm" style="width: auto; min-width: 120px;" onchange="window.location.href=this.value">
+                    <option value="help.html" selected>English</option>
+                    <option value="help-hi.html">हिंदी</option>
+                </select>
+            </div>
+            </div>
+        </div>
+            
+
+            <!-- Tab Content -->
+            <div class="tab-content" id="helpTabContent">
+                
+                <!-- WISHES TAB -->
+                <div class="tab-pane fade show active" id="wishes" role="tabpanel">
+                    <div class="content-section">
+                        <h1 class="mb-4">Wish - The Beginning of Happiness</h1>
+                        
+                        <h2>What is a Wish?</h2>
+                        <p class="lead">A <strong>Wish</strong> is a personal mission — something that makes you <em>feel alive</em>, <em>curious</em>, or <em>bold</em>. It's not about fixing yourself. It's about <strong>becoming more of who you want to be.</strong></p>
+                        
+                        <blockquote>
+                            "Your wish is not what you want to escape — it's what you want to <em>create</em>."
+                        </blockquote>
+                        
+                        <p>Unlike goals, wishes are emotional, open-ended, and flexible. They grow as you grow.</p>
+                        
+                        <h2>How to Create an Effective Wish</h2>
+                        <p>A Wish has three parts:</p>
+                        <div class="row g-3 my-4">
+                            <div class="col-md-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-pencil-square text-primary fs-1 mb-3"></i>
+                                        <h5>Title</h5>
+                                        <p class="text-muted small mb-0">What you want, in positive language</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-chat-heart text-danger fs-1 mb-3"></i>
+                                        <h5>Reason</h5>
+                                        <p class="text-muted small mb-0">Why it excites or matters to you</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-image text-success fs-1 mb-3"></i>
+                                        <h5>Image</h5>
+                                        <p class="text-muted small mb-0">Something that triggers the right emotion</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3>1. Title — Name it with Energy</h3>
+                        <p>Your wish title should <em>pull</em> you forward, not remind you of what's wrong. Think <em>"Do"</em>, <em>"Become"</em>, <em>"Dare"</em>, <em>"Create"</em>, <em>"Feel"</em>, <em>"Start"</em>, <em>"Enjoy"</em> — words that carry movement.</p>
+                        
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>❌ Weak / Problem-Based</th>
+                                        <th>✅ Strong / Positive-Identity</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Overcome fear of swimming</td>
+                                        <td>Dare to Swim</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Stop being shy</td>
+                                        <td>Speak with Ease</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Learn English</td>
+                                        <td>Enjoy Talking in English</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lose weight</td>
+                                        <td>Feel Light and Active</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Stop procrastinating</td>
+                                        <td>Finish What I Start</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Be more confident</td>
+                                        <td>Own My Presence</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Control anger</td>
+                                        <td>Stay Calm Under Fire</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="tip-box">
+                            <strong>🧭 Tip:</strong> You should <em>want</em> to open it again just by reading it. However, if it seems difficult, go with whatever comes to your mind and relates directly.
+                        </div>
+                        
+                        <h3>2. Reason: A Short Story Behind Your Wish</h3>
+                        <p>A <strong>reason</strong> doesn't always have to sound serious or wise. Make it enticing, not perfect. In <em>Atomic Habits</em>, motivation works best when it's <strong>emotionally charged and personally rewarding</strong>, not moral or idealistic.</p>
+                        
+                        <blockquote>
+                            People don't change because of perfect logic. They change because of attractive emotion.
+                        </blockquote>
+                        
+                        <h4>💫 For Deep Feelers</h4>
+                        <p>If you often find yourself thinking about "why you are the way you are," this is your space.</p>
+                        
+                        <div class="example-card">
+                            <strong>Examples:</strong>
+                            <ul class="mt-2 mb-0">
+                                <li>"I want to control my anger because I've seen it ruin love once — and I never want to be that person again."</li>
+                                <li>"I want to write a book because it's my way of saying the things I never dared to tell anyone."</li>
+                                <li>"I want to learn Japanese because it reminds me of peace, politeness, and beauty in every small thing."</li>
+                            </ul>
+                        </div>
+                        
+                        <h4>😄 For Light-Hearted Explorers</h4>
+                        <p>Not every reason has to make you cry — some can make you laugh, blush, or grin like an idiot.</p>
+                        
+                        <div class="example-card">
+                            <strong>Examples:</strong>
+                            <ul class="mt-2 mb-0">
+                                <li>"I want to dare to swim because I'm tired of being the 'bag guard' at the beach."</li>
+                                <li>"I want to quit junk food because my jeans don't agree with my decisions anymore."</li>
+                                <li>"I want to own my presence because my friends keep forgetting I'm in the group chat."</li>
+                            </ul>
+                        </div>
+                        
+                        <h4>🔒 Your Private Zone</h4>
+                        <p>This app is a <strong>safe space</strong> for your most personal thoughts. Your data stays on your device — not shared, not analyzed.</p>
+                        
+                        <div class="alert alert-info">
+                            <i class="bi bi-shield-lock me-2"></i>
+                            <strong>Privacy First:</strong> You can write things here that you've never told anyone. Be real. Be raw. Be honest with yourself.
+                        </div>
+                        
+                        <h4>Simple, Direct, and Effective</h4>
+                        <p>You don't need to be a writer to express your reason. Keep it simple, real, and close to your heart. Sometimes you'll have many reasons — always put the one that <em>shakes you the most</em> at the top.</p>
+                        
+                        <h3>3. 🌄 Image — Your Emotional Anchor</h3>
+                        
+                        <blockquote>
+                            A book can't be judged by its cover — but the cover can tempt you to open it once.
+                        </blockquote>
+                        
+                        <h4>💫 Why Image Matters</h4>
+                        <p>When you attach an image to a wish, you're not decorating it — you're <strong>anchoring it</strong> to a <em>feeling</em>. Your brain doesn't remember goals. It remembers emotions.</p>
+                        
+                        <h4>How to Choose the Right Image</h4>
+                        <p>Choose an image that connects you to a <strong>personal story</strong> — an incident, conversation, or turning point.</p>
+                        
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Wish</th>
+                                        <th>Possible Image</th>
+                                        <th>Why It Works</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Dare to Swim</td>
+                                        <td>First day at pool with daughter</td>
+                                        <td>Triggers courage and joy</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Write a Book</td>
+                                        <td>Emotional scene from favorite movie</td>
+                                        <td>Connects to the dream moment</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Feel Light and Active</td>
+                                        <td>Old photo where you looked happiest</td>
+                                        <td>Reminds you of energy you want back</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="tip-box">
+                            <strong>🧠 Psychology:</strong> Your brain stores emotions as sensory patterns. When you see an image linked with that pattern, it reactivates the same feeling — bringing back the energy to act.
+                        </div>
+                        
+                        <blockquote>
+                            "If it gives you goosebumps, a smile, or a small ache in your heart — it's perfect."
+                        </blockquote>
+                    </div>
+                </div>
+                
+                <!-- MOVEMENTS TAB -->
+                <div class="tab-pane fade" id="movements" role="tabpanel">
+                    <div class="content-section">
+                        <h1 class="mb-4">Movements — Steps That Turn Dreams Into Reality</h1>
+                        
+                        <p class="lead">A <strong>movement</strong> is a <em>moment you moved forward</em> — emotionally, mentally, or practically — toward your wish. It's not a to-do list. It's a diary of proof that <em>you're becoming the person who deserves that wish.</em></p>
+                        
+                        <div class="alert alert-primary">
+                            <i class="bi bi-lightbulb me-2"></i>
+                            <strong>Key Difference:</strong> Movements are not actions you <em>should</em> take but memories that you <em>build</em>. Actions live in the future with pressure. Memories live in the past with evidence, emotion, and momentum.
+                        </div>
+                        
+                        <h2>✍️ How to Write a Movement</h2>
+                        <p>When adding a movement, answer three short prompts:</p>
+                        
+                        <div class="row g-3 my-4">
+                            <div class="col-md-4">
+                                <div class="card border-primary h-100">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">1. What happened?</h5>
+                                        <p class="text-muted small mb-0">Describe a small real incident or action — no matter how small.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card border-danger h-100">
+                                    <div class="card-body">
+                                        <h5 class="text-danger">2. How did it feel?</h5>
+                                        <p class="text-muted small mb-0">Capture the emotion, hesitation, courage, or realization.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card border-success h-100">
+                                    <div class="card-body">
+                                        <h5 class="text-success">3. What changed?</h5>
+                                        <p class="text-muted small mb-0">Note what this moment added to your confidence or skill.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tip-box">
+                            <strong>🧭 Tip:</strong> Avoid recording negative experiences unless they are inspirations.
+                        </div>
+                        
+                        <h2>Example: Wish — "Dare to Swim"</h2>
+                        
+                        <div class="example-card">
+                            <h5 class="text-primary">Movement 1</h5>
+                            <p><strong>What happened:</strong> I stood near the pool for 10 minutes just watching others swim.</p>
+                            <p><strong>How did it feel:</strong> My heart was racing, but I didn't run away this time.</p>
+                            <p class="mb-0"><strong>What changed:</strong> Fear turned into curiosity. I wanted to learn, not hide.</p>
+                        </div>
+                        
+                        <div class="example-card">
+                            <h5 class="text-primary">Movement 2</h5>
+                            <p><strong>What happened:</strong> I dipped my feet in water for the first time in years.</p>
+                            <p><strong>How did it feel:</strong> A mix of fear and pride — but it felt good to stay there.</p>
+                            <p class="mb-0"><strong>What changed:</strong> My body began to accept the feeling of water.</p>
+                        </div>
+                        
+                        <div class="example-card">
+                            <h5 class="text-primary">Movement 3</h5>
+                            <p><strong>What happened:</strong> My friend held my hand as I floated for 5 seconds.</p>
+                            <p><strong>How did it feel:</strong> Terrifying at first, then freeing.</p>
+                            <p class="mb-0"><strong>What changed:</strong> I realized my body <em>wants</em> to float; I just need to trust it.</p>
+                        </div>
+                        
+                        <div class="example-card">
+                            <h5 class="text-primary">Movement 4</h5>
+                            <p><strong>What happened:</strong> Today I swam half the pool without support.</p>
+                            <p><strong>How did it feel:</strong> Like I've entered a new version of myself.</p>
+                            <p class="mb-0"><strong>What changed:</strong> I now identify as someone who <em>can</em> swim — not someone who's afraid.</p>
+                        </div>
+                        
+                        <h2>💡 More Examples</h2>
+                        
+                        <h3>Wish: "Speak with Ease"</h3>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Movement</th>
+                                        <th>Purpose</th>
+                                        <th>Possible Win</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Smile and say "Hi" to a stranger</td>
+                                        <td>Reduce social hesitation</td>
+                                        <td>"Said hi to the guard today — felt good."</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Record 10-sec self-talk video</td>
+                                        <td>Desensitize to your own voice</td>
+                                        <td>"Cringed less this time — improvement!"</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Join one group chat</td>
+                                        <td>Practice low-stakes speaking</td>
+                                        <td>"Typed my thoughts once — no one judged."</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <h3>Adding Date & Image</h3>
+                        <p><strong>Date:</strong> Mark the day (or period) when it happened. It doesn't have to be exact — real progress often unfolds over time.</p>
+                        <p><strong>Movement Image:</strong> Add a picture that emotionally connects with that memory — your first attempt, a certificate, a trophy, or even a simple photo capturing how you felt in that moment.</p>
+                        
+                        <blockquote>
+                            Each image you attach becomes a bookmark in your journey — proof that effort leaves a trace, and that you are already becoming the person you wished to be.
+                        </blockquote>
+                    </div>
+                </div>
+                
+                <!-- WINS TAB -->
+                <div class="tab-pane fade" id="wins" role="tabpanel">
+                    <div class="content-section">
+                        <h1 class="mb-4">Wins — The Art of Remembering Progress</h1>
+                        
+                        <p class="lead">Every wish begins with hope — but it <em>grows</em> through evidence. Each time you take a step, no matter how small, you are <strong>collecting proof</strong> that you're becoming the person you wanted to be.</p>
+                        
+                        <blockquote>
+                            "Every small win is a vote for your future self." — <em>Atomic Habits</em>
+                        </blockquote>
+                        
+                        <h2>🎯 What is a Win?</h2>
+                        <p>A <strong>Win</strong> is any moment that gives you a sense of "Yes, I did something that matters."</p>
+                        
+                        <p>It can be:</p>
+                        <ul>
+                            <li>Something you <em>completed</em></li>
+                            <li>Something you <em>tried for the first time</em></li>
+                            <li>Something you <em>understood about yourself</em></li>
+                            <li>Or even a <em>moment you handled better than before</em></li>
+                        </ul>
+                        
+                        <h2>💡 Examples of Wins</h2>
+                        
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Wish</th>
+                                        <th>Win Example</th>
+                                        <th>Why It's a Real Win</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Dare to Swim</td>
+                                        <td>"I dipped my feet in the water today."</td>
+                                        <td>You faced the edge — that's courage in action.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Speak with Ease</td>
+                                        <td>"I joined a group chat and shared my view."</td>
+                                        <td>You expressed yourself — progress toward confidence.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Feel Light and Active</td>
+                                        <td>"Took stairs instead of lift."</td>
+                                        <td>You acted like the person you're becoming.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Finish My Book</td>
+                                        <td>"Wrote just 150 words, but didn't skip today."</td>
+                                        <td>Momentum beats perfection.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="tip-box">
+                            <strong>🧭 Tip:</strong> Don't judge wins by <em>size</em>. Judge them by <em>direction</em>.
+                        </div>
+                        
+                        <h2>Wins Beyond Wishes</h2>
+                        <p>A win isn't always tied to a wish. Sometimes, life quietly rewards your past efforts in unexpected ways.</p>
+                        
+                        <div class="example-card">
+                            <strong>Examples of Everyday Wins:</strong>
+                            <ul class="mt-2 mb-0">
+                                <li>Appreciation from a colleague on their last day</li>
+                                <li>Getting selected for a role you applied for</li>
+                                <li>Finding a good mentor or coach</li>
+                                <li>Making a true friend</li>
+                                <li>Support from parents when you needed it most</li>
+                                <li>Overcoming hesitation and taking the first step</li>
+                                <li>Pure luck when things fell into place</li>
+                                <li>Living without financial pressure</li>
+                            </ul>
+                        </div>
+                        
+                        <h2>🌸 Wabi-Sabi Wisdom</h2>
+                        <p>Not every day will be shiny. Some days will just be effort. That's okay.</p>
+                        
+                        <blockquote>
+                            Wabi Sabi teaches: <em>Even the cracks are part of the beauty.</em>
+                        </blockquote>
+                        
+                        <p>A "Win" can be:</p>
+                        <ul>
+                            <li>"Didn't quit today."</li>
+                            <li>"Showed up even when I didn't feel like it."</li>
+                            <li>"Rested without guilt."</li>
+                        </ul>
+                        
+                        <h2>💫 Why Recording Wins Works</h2>
+                        
+                        <h3>1. Reward Prediction</h3>
+                        <p>When your brain sees a "recorded win," it releases dopamine — not for the result, but for the <em>recognition of effort</em>. That small pleasure becomes your new motivation loop.</p>
+                        
+                        <h3>2. Shifting Identity</h3>
+                        <p>Each win is a micro-proof of who you're becoming. Over time, these notes quietly rewire your self-image from "I'm trying" to "I'm the kind of person who does this."</p>
+                        
+                        <h3>3. Resilience Memory</h3>
+                        <p>When you feel stuck, scrolling through your old wins reminds you that you've been here before — and you've <em>moved forward every time</em>.</p>
+                        
+                        <blockquote>
+                            "You'll start believing in yourself not because someone said so, but because your own story says so."
+                        </blockquote>
+                        
+                        <h2>Connection to Your Why</h2>
+                        <p>Your "Wins" are moments when your <strong>Why</strong> takes shape in the real world. They show you which wishes truly matter — the ones that keep pulling you forward even on tough days.</p>
+                        
+                        <blockquote>
+                            "Wishes show you the dream. Wins prove you're walking toward it."
+                        </blockquote>
+                        
+                        <div class="alert alert-success mt-4">
+                            <i class="bi bi-star me-2"></i>
+                            <strong>Remember:</strong> Celebrate your progress — not for the world to see, but for your inner story to believe. Every line you write under <em>Wins</em> is a quiet whisper that says: <strong>"I'm growing."</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- WHY TAB -->
+                <div class="tab-pane fade" id="why" role="tabpanel">
+                    <div class="content-section">
+                        <h1 class="mb-4">The Power of "Why"</h1>
+                        
+                        <h2>What is a "Why"?</h2>
+                        <p class="lead">Your <strong>Why</strong> is the <em>emotional compass</em> behind your wishes — the inner story that explains <em>why</em> something truly matters to you. It's not about success, status, or achievement. It's about what gives your actions <strong>meaning</strong> and your life <strong>direction</strong>.</p>
+                        
+                        <div class="row g-3 my-4">
+                            <div class="col-md-6">
+                                <div class="card border-danger">
+                                    <div class="card-body">
+                                        <h5 class="text-danger">❌ WHY is NOT:</h5>
+                                        <ul class="mb-0">
+                                            <li>What career to choose</li>
+                                            <li>What project to build</li>
+                                            <li>Specific goals or achievements</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-success">
+                                    <div class="card-body">
+                                        <h5 class="text-success">✅ WHY IS:</h5>
+                                        <ul class="mb-0">
+                                            <li>The consistent pattern in how you create impact</li>
+                                            <li>What you naturally bring to others</li>
+                                            <li>Your core contribution to the world</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <p class="text-muted"><em>Inspired by the book "Find Your Why"</em></p>
+                        
+                        <h2>Why Your "Why" is Important</h2>
+                        <p>Feeling <strong>satisfied</strong> is often more powerful than feeling <strong>happy</strong> for a moment. You may feel happy when you hold a trophy or see your name in the newspaper. But if that trophy was earned through bribing judges — would you still feel satisfied?</p>
+                        
+                        <div class="alert alert-info">
+                            <i class="bi bi-compass me-2"></i>
+                            <strong>Your Why helps you:</strong>
+                            <ul class="mb-0 mt-2">
+                                <li>Feel content, grounded, and sure of your direction</li>
+                                <li>Choose the right path — career, habits, priorities</li>
+                                <li>Spend less time overthinking decisions</li>
+                                <li>Stay steady when motivation fades</li>
+                                <li>Filter dozens of ideas to find what truly resonates</li>
+                            </ul>
+                        </div>
+                        
+                        <h2>🪞 How to Discover Your Why</h2>
+                        
+                        <blockquote>
+                            "Your WHY already exists — it's not invented, it's discovered." — <em>Find Your Why</em>
+                        </blockquote>
+                        
+                        <p>You uncover your WHY by looking at real stories and patterns from your life — especially those where you felt <strong>proud</strong>, <strong>energized</strong>, or <strong>connected</strong>.</p>
+                        
+                        <h3>The "To … So That …" Framework</h3>
+                        
+                        <div class="row g-4 my-4">
+                            <div class="col-md-6">
+                                <div class="card h-100 bg-light border-0">
+                                    <div class="card-body">
+                                        <h5 class="text-primary">To…</h5>
+                                        <p class="mb-2"><strong>Your contribution</strong> — what you bring to others.</p>
+                                        <p class="text-muted small mb-0">Ask yourself:
+                                            <br>• What do I naturally do for others?
+                                            <br>• How do I help, support, or guide people?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 bg-light border-0">
+                                    <div class="card-body">
+                                        <h5 class="text-success">So that…</h5>
+                                        <p class="mb-2"><strong>Your impact</strong> — what changes because of you.</p>
+                                        <p class="text-muted small mb-0">Ask yourself:
+                                            <br>• Why does what I do matter?
+                                            <br>• How does it make others' lives better?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3>Why the Focus Is on Others</h3>
+                        <p>At first, it might feel strange — "Why should I think about others? My life is my own." But when you look deeper, you'll realize: everything you do connects back to others.</p>
+                        
+                        <div class="example-card">
+                            <strong>Examples:</strong>
+                            <ul class="mt-2 mb-0">
+                                <li>You earn money to support, gift, or help others</li>
+                                <li>You wish for a good body to impress or inspire someone</li>
+                                <li>You build products to solve others' problems</li>
+                                <li>Your dreams become meaningful only when others are part of them</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="alert alert-warning">
+                            <i class="bi bi-lightbulb me-2"></i>
+                            <strong>Example Story:</strong> Imagine you create an agricultural tool that protects crops. You dream of building a global company around it. But if that tool doesn't <em>help farmers</em>, could you still succeed? Your dream becomes meaningful only when others are part of it.
+                        </div>
+                        
+                        <h4>Example Why Statements</h4>
+                        <div class="example-card">
+                            <ul class="mb-0">
+                                <li><strong>To</strong> help others believe they are stronger than they think <strong>so that</strong> they can face life with confidence.</li>
+                                <li><strong>To</strong> spark curiosity in children through playful learning <strong>so that</strong> they stay excited about discovering new ideas.</li>
+                                <li><strong>To</strong> create accessible learning spaces <strong>so that</strong> every child gets a fair chance to grow.</li>
+                                <li><strong>To</strong> turn pain into art <strong>so that</strong> others find healing through it.</li>
+                                <li><strong>To</strong> bring calm and understanding <strong>so that</strong> people around me feel safe and valued.</li>
+                            </ul>
+                        </div>
+                        
+                        <h2>How to Discover Yours</h2>
+                        <p>Keep refining the sentence until it feels <em>true and inspiring</em> to YOU.</p>
+                        
+                        <h3>1. Recall Emotional Moments</h3>
+                        <p>Think of 2–3 experiences that made you <em>feel alive</em>, <em>grateful</em>, or <em>changed</em>. These could be moments when you:</p>
+                        <ul>
+                            <li>Helped someone and felt proud</li>
+                            <li>Overcame fear or pain</li>
+                            <li>Created something that made you smile</li>
+                            <li>Stood up for what you believed in</li>
+                        </ul>
+                        
+                        <h3>2. Ask: "What Did This Moment Teach Me?"</h3>
+                        <p>In every strong memory, there's a hidden value — maybe courage, love, creativity, or honesty. Your Why usually points toward that core value.</p>
+                        
+                        <div class="example-card">
+                            <strong>Example:</strong>
+                            <p class="mb-1"><strong>Moment:</strong> "When I taught my little cousin to ride a cycle, I felt amazing."</p>
+                            <p class="mb-1"><strong>Insight:</strong> "I love helping others feel confident."</p>
+                            <p class="mb-0"><strong>→ Why:</strong> "To help people believe in their own strength."</p>
+                        </div>
+                        
+                        <h3>3. Write Your Why in a Simple, Emotional Sentence</h3>
+                        <p>Make it <strong>personal, not perfect</strong>. Use words that emotionally <em>click</em> for you.</p>
+                        
+                        <div class="example-card">
+                            <strong>Examples:</strong>
+                            <ul class="mt-2 mb-0">
+                                <li>"To live curiously and help others feel brave enough to try."</li>
+                                <li>"To turn pain into art and inspire healing in others."</li>
+                                <li>"To make people smile even in ordinary moments."</li>
+                                <li>"To keep learning and share what I learn."</li>
+                                <li>"To create things that outlive me."</li>
+                            </ul>
+                        </div>
+                        
+                        <h2>Wish vs Why: How Your Why Filters Your Wishes</h2>
+                        
+                        <p>We can have <strong>many wishes</strong>, but usually <strong>only one core Why</strong>.</p>
+                        
+                        <div class="row g-3 my-4">
+                            <div class="col-md-6">
+                                <div class="card border-warning h-100">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-star text-warning fs-1 mb-2"></i>
+                                        <h5>A Wish</h5>
+                                        <p class="text-muted mb-0">Brings momentary happiness</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-success h-100">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-heart text-success fs-1 mb-2"></i>
+                                        <h5>Your Why</h5>
+                                        <p class="text-muted mb-0">Brings lasting satisfaction</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <p>Not every wish deserves your energy. Your Why acts like a <em>compass</em> — if a wish doesn't align with it, it's just a distraction.</p>
+                        
+                        <h3>Does Your Wish Align?</h3>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Wish</th>
+                                        <th>Why it fits or doesn't</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>"Buy a luxury car"</td>
+                                        <td>❌ Doesn't fit with "To live simply and inspire peace."</td>
+                                    </tr>
+                                    <tr>
+                                        <td>"Learn to paint nature"</td>
+                                        <td>✅ Fits with "To express beauty and calm."</td>
+                                    </tr>
+                                    <tr>
+                                        <td>"Become a YouTuber"</td>
+                                        <td>✅ If your Why is "To share my voice and connect with people."</td>
+                                    </tr>
+                                    <tr>
+                                        <td>"Win every argument"</td>
+                                        <td>❌ Doesn't fit with "To bring harmony and understanding."</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="alert alert-primary">
+                            <i class="bi bi-question-circle me-2"></i>
+                            <strong>Before saving a wish, ask yourself:</strong> "Does this wish reflect who I truly am becoming — or just what the world told me to want?"
+                        </div>
+                        
+                        <h2>More Examples</h2>
+                        <p>If you feel your passion in teaching, your Why can be stated as:</p>
+                        <div class="example-card">
+                            <ul class="mb-0">
+                                <li><strong>To</strong> spark curiosity in children through playful learning <strong>so that</strong> they stay excited about exploring new ideas.</li>
+                                <li><strong>To</strong> create accessible learning spaces <strong>so that</strong> every child has a chance to learn, and I continue improving by learning with them.</li>
+                                <li><strong>To</strong> help people recognize their inner strengths <strong>so that</strong> they feel confident and empowered to pursue their path.</li>
+                            </ul>
+                        </div>
+                        
+                        <h2>🌙 Closing Thought</h2>
+                        <blockquote>
+                            "Your Why is not what you do — it's what makes you <em>come alive</em> while doing it. When your wishes serve your Why, every step feels like growth, not effort."
+                        </blockquote>
+                        
+                        <div class="text-center mt-5 p-4 bg-light rounded">
+                            <i class="bi bi-heart-fill text-danger fs-1 mb-3"></i>
+                            <h3>Start Your Journey</h3>
+                            <p class="text-muted">Now that you understand Wishes, Movements, Wins, and Why — you're ready to begin documenting your growth story.</p>
+                            <a href="/wishin/index.html" class="btn btn-primary btn-lg mt-3">
+                                <i class="bi bi-arrow-left me-2"></i>Back to WishIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <div id="footer-mount"></div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="/assets/js/components.js"></script>
+    <script src="/assets/js/main.js"></script>
+    
+    <script>
+        // Smooth scroll to top when switching tabs
+        document.querySelectorAll('#helpTabs button').forEach(button => {
+            button.addEventListener('shown.bs.tab', function (event) {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Update active tab on page load if there's a hash
+        window.addEventListener('DOMContentLoaded', function() {
+            const hash = window.location.hash;
+            if (hash) {
+                const tabButton = document.querySelector(`button[data-bs-target="${hash}"]`);
+                if (tabButton) {
+                    const tab = new bootstrap.Tab(tabButton);
+                    tab.show();
+                }
+            }
+        });
+    </script>
+</body>
+</html>

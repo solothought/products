@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flowgger - Revolutionary logging framework that reduces log size by up to 90% through flow-based logging.">
+    <title>Flowgger - Logging Framework | SoloThought</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    
+    <style>
+        .code-block {
+            background-color: #282c34;
+            color: #abb2bf;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+        }
+        .code-block code {
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-mount"></div>
+    
+    <!-- Product Hero -->
+    <section class="product-hero" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-journal-code fs-1 me-3"></i>
+                        <h1 class="mb-0">Flowgger</h1>
+                    </div>
+                    <p class="lead">A revolutionary logging framework that reduces log size by up to 90%. Define your code flows once, log efficiently, and debug faster.</p>
+                    <div class="d-flex flex-wrap gap-2 mt-4">
+                        <span class="badge bg-light text-dark px-3 py-2">Open Source</span>
+                        <span class="badge bg-light text-dark px-3 py-2">MIT License</span>
+                        <span class="badge bg-light text-dark px-3 py-2">Node.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Product Navigation -->
+    <nav class="product-nav">
+        <div class="container">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#overview">Overview</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#quick-start">Quick Start</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#performance">Performance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/solothought/flowgger" target="_blank">
+                        <i class="bi bi-github me-1"></i>GitHub
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main class="content-section">
+        <div class="container">
+            
+            <!-- Overview Section -->
+            <section id="overview" class="mb-5">
+                <h2>What is Flowgger?</h2>
+                <p class="lead text-muted">Unlike traditional logging tools, Flowgger requires users to define the flow of their code in advance in <code>.stflow</code> files.</p>
+                
+                <p>Flowgger matches logging statements against this predefined flow and logs only the step ID. This drastically reduces log size while providing all relevant information in a single log entry, such as execution time of each step, the entire flow, sequence of steps, and flow status.</p>
+                
+                <div class="row g-4 mt-4">
+                    <div class="col-md-6">
+                        <div class="card border-success h-100">
+                            <div class="card-body">
+                                <h5 class="card-title text-success">
+                                    <i class="bi bi-arrows-collapse me-2"></i>Reduced Log Size
+                                </h5>
+                                <p class="card-text">Logs are minimal, resulting in faster logging and reduced storage requirements. Save up to 90% on log storage costs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Roadmap Section -->
+            <section class="mb-5">
+                <h2>Roadmap</h2>
+                <p class="text-muted">Features planned for future releases:</p>
+                
+                <div class="row g-3 mt-3">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h6 class="text-muted">IN PROGRESS</h6>
+                                <ul class="list-unstyled">
+                                    <li><i class="bi bi-circle-fill text-warning me-2" style="font-size: 0.5rem;"></i>System level non-flow appenders</li>
+                                    <li><i class="bi bi-circle-fill text-warning me-2" style="font-size: 0.5rem;"></i>Dynamic appenders for temporary debug files</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h6 class="text-muted">PLANNED</h6>
+                                <ul class="list-unstyled">
+                                    <li><i class="bi bi-circle text-secondary me-2" style="font-size: 0.5rem;"></i>CommonJS module support</li>
+                                    <li><i class="bi bi-circle text-secondary me-2" style="font-size: 0.5rem;"></i>Browser support with text-based flows</li>
+                                    <li><i class="bi bi-circle text-secondary me-2" style="font-size: 0.5rem;"></i>Integration with Logstash and chat platforms</li>
+                                    <li><i class="bi bi-circle text-secondary me-2" style="font-size: 0.5rem;"></i>VS Code plugin: Jump to code from .stflow files</li>
+                                    <li><i class="bi bi-circle text-secondary me-2" style="font-size: 0.5rem;"></i>Smart filtering with key consideration</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <div id="footer-mount"></div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="/assets/js/components.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>    
+                    <div class="col-md-6">
+                        <div class="card border-success h-100">
+                            <div class="card-body">
+                                <h5 class="card-title text-success">
+                                    <i class="bi bi-speedometer2 me-2"></i>Efficient Debugging
+                                </h5>
+                                <p class="card-text">Significantly reduces debugging time—from days to minutes—by providing structured, minimal logs with complete context.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Features Section -->
+            <section id="features" class="mb-5">
+                <h2>Key Features</h2>
+                
+                <div class="row g-4 mt-3">
+                    <div class="col-lg-4">
+                        <h5><i class="bi bi-diagram-3 text-success me-2"></i>Flow Definition</h5>
+                        <p class="text-muted">Define code flows in <code>.stflow</code> files. Visualize them in VS Code using the Text2Chart extension.</p>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <h5><i class="bi bi-key text-success me-2"></i>Keyed Logging</h5>
+                        <p class="text-muted">Assign keys to logs for testing new features. Disable them later without deployment or restart.</p>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <h5><i class="bi bi-toggles text-success me-2"></i>Play/Pause Controls</h5>
+                        <p class="text-muted">Selectively enable or disable logs for specific flows, types, or keys at runtime.</p>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <h5><i class="bi bi-funnel text-success me-2"></i>Smart Filtering</h5>
+                        <p class="text-muted">Use <code>onlyFor</code> and <code>notFor</code> filters to route logs to specific streams based on flow or type.</p>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <h5><i class="bi bi-envelope text-success me-2"></i>Custom Appenders</h5>
+                        <p class="text-muted">Write logs to multiple destinations. Send errors to email or chat platforms automatically.</p>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <h5><i class="bi bi-clock text-success me-2"></i>Execution Timing</h5>
+                        <p class="text-muted">Track execution time for each step and the entire flow automatically.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Quick Start Section -->
+            <section id="quick-start" class="mb-5">
+                <h2>Quick Start</h2>
+                
+                <h3 class="h5 mt-4">Installation</h3>
+                <div class="code-block">
+                    <code>npm install @solothought/flowgger</code>
+                </div>
+                
+                <h3 class="h5 mt-4">Basic Setup</h3>
+                <div class="code-block">
+                    <code><pre>import Flowgger from '@solothought/flowgger';
+
+const config = {
+  appenders: [
+    {
+      handler: appenderFn,
+      layout: layoutFn,
+      onlyFor: {
+        types: [],
+        flows: []
+      }
+    }
+  ],
+  flow: {
+    source: path.resolve("./flows"),
+    // maxIdleTime: 200
+  }
+}
+
+// Create Flowgger instance once at application level
+const flowgger = new Flowgger(config);</pre></code>
+                </div>
+                
+                <h3 class="h5 mt-4">Usage Example</h3>
+                <div class="code-block">
+                    <code><pre>// Initialize logger for a specific flow
+const binFlow = flowgger.init("Binary Search");
+
+// Log flow steps
+binFlow.info("read low");
+binFlow.info("read high");
+
+// Log additional data
+binFlow.debug("values", {low: lowVal, high: highVal});
+
+// Handle errors
+binFlow.error("NULL POINTER EXCEPTION", e.stackTrace());
+
+// End the flow
+binFlow.end();</pre></code>
+                </div>
+                
+                <div class="alert alert-info mt-4">
+                    <i class="bi bi-lightbulb me-2"></i>
+                    <strong>Pro Tip:</strong> The order of steps in your code must match the flow defined in your <code>.stflow</code> file.
+                </div>
+            </section>
+            
+            <!-- Performance Section -->
+            <section id="performance" class="mb-5">
+                <h2>Performance Comparison</h2>
+                <p class="text-muted">Smaller log sizes mean faster logging and reduced storage costs.</p>
+                
+                <div class="card bg-light border-0 mt-4">
+                    <div class="card-body">
+                        <h5>Log Size Reduction</h5>
+                        <p class="text-muted mb-3">Comparison between Flowgger and traditional logging frameworks:</p>
+                        
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead class="table-success">
+                                    <tr>
+                                        <th>Scenario</th>
+                                        <th>Log Statements</th>
+                                        <th>Avg Length</th>
+                                        <th>Size Reduction</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Small Application</td>
+                                        <td>20 logs/API</td>
+                                        <td>20 chars</td>
+                                        <td>~85%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Medium Application</td>
+                                        <td>20 logs/API</td>
+                                        <td>50 chars</td>
+                                        <td>~88%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Large Application</td>
+                                        <td>50 logs/API</td>
+                                        <td>50 chars</td>
+                                        <td>~90%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="alert alert-warning mb-0">
+                            <strong>Example:</strong> With 10 APIs and 1000 requests each, Flowgger generates <strong>2.75 MB</strong> logs compared to <strong>22.3 MB</strong> with traditional frameworks (20 log statements per API, 50 chars average).
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Resources Section -->
+            <section class="mb-5">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Resources & Links</h5>
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <a href="https://github.com/solothought/flowgger" target="_blank" class="btn btn-success w-100">
+                                    <i class="bi bi-github me-2"></i>GitHub Repository
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="https://github.com/solothought/flowgger/blob/main/docs/1.GettingStarted.md" target="_blank" class="btn btn-outline-success w-100">
+                                    <i class="bi bi-book me-2"></i>Documentation
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="/flowgger/license.html" class="btn btn-outline-success w-100">
+                                    <i class="bi bi-award me-2"></i>MIT License
+                                </a>
+                            </div>
+                        </div>
+                    </div>
