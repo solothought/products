@@ -5,7 +5,7 @@ const Header = () => `
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="/">
-                <strong>SoloThought</strong>
+              <img src="/assets/images/logo.png" alt="SoloThought">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -20,9 +20,6 @@ const Header = () => `
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contact">Contact</a>
                     </li>
                 </ul>
             </div>
