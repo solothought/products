@@ -327,7 +327,7 @@ body.in-app #footer-mount {
     }
 
     .nav-pills .nav-item:first-child .nav-link {
-        margin-left: 0.25rem;
+        margin-left: 1rem;
     }
     
     .nav-pills .nav-item:last-child .nav-link {
