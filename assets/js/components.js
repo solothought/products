@@ -39,11 +39,11 @@ const Footer = () => `
                     <a href="https://github.com/solothought" target="_blank" class="me-3" title="GitHub">
                         <i class="bi bi-github fs-5"></i>
                     </a>
-                    <a href="https://twitter.com/solothought" target="_blank" class="me-3" title="Twitter">
+                    <a href="https://x.com/solothought_q" target="_blank" class="me-3" title="Twitter">
                         <i class="bi bi-twitter fs-5"></i>
                     </a>
-                    <a href="https://linkedin.com/company/solothought" target="_blank" title="LinkedIn">
-                        <i class="bi bi-linkedin fs-5"></i>
+                    <a href="mailto:solothought.official@gmail.com" target="_blank" title="Mail">
+                        <i class="bi bi-envelope fs-5"></i>
                     </a>
                 </div>
             </div>
@@ -51,7 +51,7 @@ const Footer = () => `
             <div class="col-lg-2 col-md-6">
                 <h5>Products</h5>
                 <ul class="list-unstyled">
-                    <li><a href="/youcan/">YouCan</a></li>
+                    <li><a href="/wishin/">WishIn</a></li>
                     <li><a href="/flowgger/">Flowgger</a></li>
                 </ul>
             </div>
@@ -61,18 +61,18 @@ const Footer = () => `
                 <ul class="list-unstyled">
                     <li><a href="/docs">Documentation</a></li>
                     <li><a href="/blog">Blog</a></li>
-                    <li><a href="/support">Support</a></li>
+                    <li><a href="/about">About</a></li>
                 </ul>
             </div>
             
-            <div class="col-lg-3 col-md-6">
+            <!-- <div class="col-lg-3 col-md-6">
                 <h5>Legal</h5>
                 <ul class="list-unstyled">
                     <li><a href="/privacy">Privacy Policy</a></li>
                     <li><a href="/terms">Terms of Service</a></li>
                     <li><a href="/cookies">Cookie Policy</a></li>
                 </ul>
-            </div>
+            </div> -->
         </div>
         
         <div class="footer-bottom text-center">
@@ -116,7 +116,7 @@ function highlightActiveNav() {
     });
     
     // Special handling for products section
-    if (currentPath.includes('/youcan') || currentPath.includes('/flowgger')) {
+    if (currentPath.includes('/wishin') || currentPath.includes('/flowgger')) {
         const productsLink = document.getElementById('nav-products');
         if (productsLink) {
             productsLink.classList.add('active');
