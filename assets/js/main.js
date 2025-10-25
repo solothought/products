@@ -110,3 +110,16 @@ function handleLanguageChange(newUrl) {
     
     window.location.href = newUrl;
 }
+
+window.addEventListener('DOMContentLoaded', function() {
+    const hash = window.location.hash;
+    if (hash) {
+        // Remove the # and use it as section ID
+        const section = hash.substring(1);
+        const tabButton = document.querySelector(`#${section}-tab`);
+        if (tabButton) {
+            const tab = new bootstrap.Tab(tabButton);
+            tab.show();
+        }
+    }
+});
