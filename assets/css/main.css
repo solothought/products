@@ -309,7 +309,7 @@ body.in-app #footer-mount {
     .sticky-nav {
         position: relative;
         top: 0;
-        padding: 0.75rem;
+        padding: 0.75rem 0.5rem;
     }
     
     .nav-pills {
@@ -317,11 +317,21 @@ body.in-app #footer-mount {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         width: 100%;
+        padding: 0 0.5rem;
     }
     
     .nav-pills .nav-link {
         white-space: nowrap;
         font-size: 0.85rem; /* Smaller text on mobile */
+        padding: 0.5rem 1rem;
+    }
+
+    .nav-pills .nav-item:first-child .nav-link {
+        margin-left: 0.25rem;
+    }
+    
+    .nav-pills .nav-item:last-child .nav-link {
+        margin-right: 0.25rem;
     }
 }
 

@@ -97,3 +97,16 @@ const urlParams = new URLSearchParams(window.location.search);
 if (urlParams.get('app') === 'true') {
     document.body.classList.add('in-app');
 }
+
+function handleLanguageChange(newUrl) {
+    const urlParams = new URLSearchParams(window.location.search);
+    const isApp = urlParams.get('app') === 'true';
+    
+    // If in app, append app=true to new URL
+    if (isApp) {
+        const separator = newUrl.includes('?') ? '&' : '?';
+        newUrl = newUrl + separator + 'app=true';
+    }
+    
+    window.location.href = newUrl;
+}
