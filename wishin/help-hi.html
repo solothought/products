@@ -102,6 +102,25 @@
         body.in-app #footer-mount {
             display: none !important;
         }
+
+
+        .lang-selector {
+            background: rgba(102, 126, 234, 0.9); /* Matches your brand gradient */
+            border-radius: 50px;
+            padding: 0.5rem 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .lang-selector select option {
+            background: white;
+            color: black;
+        }
+
+        @media (max-width: 768px) {
+            .lang-selector {
+                font-size: 0.9rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -880,25 +899,24 @@
             document.body.classList.add('in-app');
         }
 
+        // Handle hash-based navigation to specific tabs
         window.addEventListener('DOMContentLoaded', function() {
-        const hash = window.location.hash;
-        if (hash) {
-            // Remove the # and use it as section ID
-            const section = hash.substring(1);
-            const tabButton = document.querySelector(`#${section}-tab`);
-            if (tabButton) {
-                const tab = new bootstrap.Tab(tabButton);
-                tab.show();
+            const hash = window.location.hash;
+            if (hash) {
+                // Remove the # to get section name (e.g., "movements")
+                const section = hash.substring(1);
+                // Find button that controls this section
+                const tabButton = document.querySelector(`button[data-bs-target="#${section}"]`);
+                if (tabButton) {
+                    const tab = new bootstrap.Tab(tabButton);
+                    tab.show();
+                    // Scroll to top after showing tab
+                    setTimeout(() => window.scrollTo(0, 0), 100);
+                }
             }
-        }
-    </script>
+        });
 
-    <!-- Custom JS -->
-    <script src="../assets/js/components.js"></script>
-    <script src="../assets/js/main.js"></script>
-    
-    <script>
-        // Smooth scroll to top when switching tabs
+        // Smooth scroll to top when manually switching tabs
         document.querySelectorAll('#helpTabs button').forEach(button => {
             button.addEventListener('shown.bs.tab', function (event) {
                 window.scrollTo({
@@ -907,18 +925,23 @@
                 });
             });
         });
-        
-        // Update active tab on page load if there's a hash
-        window.addEventListener('DOMContentLoaded', function() {
-            const hash = window.location.hash;
-            if (hash) {
-                const tabButton = document.querySelector(`button[data-bs-target="${hash}"]`);
-                if (tabButton) {
-                    const tab = new bootstrap.Tab(tabButton);
-                    tab.show();
-                }
+
+        function handleLanguageChange(newUrl) {
+            const urlParams = new URLSearchParams(window.location.search);
+            const isApp = urlParams.get('app') === 'true';
+            
+            // If in app, append app=true to new URL
+            if (isApp) {
+                const separator = newUrl.includes('?') ? '&' : '?';
+                newUrl = newUrl + separator + 'app=true';
             }
-        });
+            
+            window.location.href = newUrl;
+        }
     </script>
+
+    <!-- Custom JS -->
+    <script src="../assets/js/components.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>
