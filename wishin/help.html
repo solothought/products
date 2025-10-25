@@ -96,7 +96,12 @@
             color: #856404;
         }
 
-
+        body.in-app #header-mount,
+        body.in-app .product-hero,
+        body.in-app .product-nav,
+        body.in-app #footer-mount {
+            display: none !important;
+        }
     </style>
 </head>
 <body>
@@ -868,7 +873,25 @@
     
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-    
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('app') === 'true') {
+            document.body.classList.add('in-app');
+        }
+
+        window.addEventListener('DOMContentLoaded', function() {
+        const hash = window.location.hash;
+        if (hash) {
+            // Remove the # and use it as section ID
+            const section = hash.substring(1);
+            const tabButton = document.querySelector(`#${section}-tab`);
+            if (tabButton) {
+                const tab = new bootstrap.Tab(tabButton);
+                tab.show();
+            }
+        }
+    });
+    </script>
     <!-- Custom JS -->
     <script src="../assets/js/components.js"></script>
     <script src="../assets/js/main.js"></script>

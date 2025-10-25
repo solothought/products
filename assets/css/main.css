@@ -272,12 +272,7 @@ body {
     background-clip: text;
 }
 
-body.in-app #header-mount,
-body.in-app .product-hero,
-body.in-app .product-nav,
-body.in-app #footer-mount {
-    display: none !important;
-}
+
 
 /* Stick Nav*/
 .nav-pills .nav-link {
