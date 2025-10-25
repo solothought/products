@@ -92,3 +92,8 @@ function initCodeCopyButtons() {
         });
     });
 }
+
+const urlParams = new URLSearchParams(window.location.search);
+if (urlParams.get('app') === 'true') {
+    document.body.classList.add('in-app');
+}
